@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="history"></div>
+            <input type="text" class="calculator-input" value="0" readonly>
+        </div>
+        <div class="buttons">
+            <button id="btn-allClear"class="btn" onclick="calculate(this)" data-key="Escape">AC</button>
+            <button class="btn" onclick="calculate(this)" data-key="(">(</button>
+            <button class="btn" onclick="calculate(this)" data-key=")">)</button>
+            <button class="btn operation" onclick="calculate(this)" data-key="*">×</button>
+            <button class="btn" onclick="calculate(this)" value="7" data-key="7">7</button>
+            <button class="btn" onclick="calculate(this)" value="8" data-key="8">8</button>
+            <button class="btn" onclick="calculate(this)" value="9" data-key="9">9</button>
+            <button class="btn operation" onclick="calculate(this)" data-key="/">÷</button>
+            <button class="btn" onclick="calculate(this)" value="4" data-key="4">4</button>
+            <button class="btn" onclick="calculate(this)" value="5" data-key="5">5</button>
+            <button class="btn" onclick="calculate(this)" value="6" data-key="6">6</button>
+            <button class="btn operation" onclick="calculate(this)" data-key="-">−</button>
+            <button class="btn" onclick="calculate(this)" value="1" data-key="1">1</button>
+            <button class="btn" onclick="calculate(this)" value="2" data-key="2">2</button>
+            <button class="btn" onclick="calculate(this)" value="3" data-key="3">3</button>
+            <button class="btn operation" onclick="calculate(this)" data-key="+">+</button>
+            <button class="btn" onclick="calculate(this)" data-key="Backspace">Del</button>
+            <button class="btn" onclick="calculate(this)" value="0" data-key="0">0</button>
+            <button class="btn" onclick="calculate(this)" data-key=".">.</button>
+            <button id="btn-equalTo" class="btn" onclick="calculate(this)" data-key="Enter">=</button>
+        </div>
+    </div>
+</body>
+</html>
