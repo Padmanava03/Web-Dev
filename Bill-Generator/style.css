@@ -1,0 +1,210 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bill-list{
+    margin-top: 50px;
+}
+
+.input-section table th input:-webkit-autofill,
+.input-section table th input:-webkit-autofill:hover, 
+.input-section table th input:-webkit-autofill:focus, 
+.input-section table th input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.bill-list table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.bill-list table td, .bill-list table th{
+    height: 40px;
+    border: 1px solid black;
+}
+
+.bill-list table td input{
+    display: block;
+    margin-left: 10px;
+    border: none;
+    height: 80px;
+    width: 97%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bill-list table td input:focus::placeholder{
+    color: transparent;
+}
+
+.input-section{
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 50%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    background-color: rgb(160, 113, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-section table{
+    padding: 20px 0px 15px ;
+}
+
+.input-section table th{
+    display: inline-block;
+    text-align: left;
+}
+
+.input-section table th ~ th{
+    margin-left: 50px;
+}
+
+.input-section table tfoot th{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section table tfoot th input{
+    margin-left: 6px;
+}
+
+.input-section table th input{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: transparent;
+    margin-left: 0px;
+    border: none;
+    height: 17px;
+    width: 150px;
+    border-bottom: 1px dotted black;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input-section table th input::-webkit-outer-spin-button,
+.input-section table th input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#quantity, #price, #gst{
+    width: 60px;
+}
+
+.input-section table td, .input-section table th{
+    height: 40px;
+}
+
+button{
+    display: inline-block;
+}
+
+#add-btn {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 85px;
+    background-color: #28a745;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#add-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#add-btn:active {
+    background-color: #1e7e34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#cancel-btn {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 85px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#cancel-btn:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#cancel-btn:active {
+    background-color: #bd2130;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#apply-btn {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 85px;
+    background-color: #284ca7;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#apply-btn:hover {
+    background-color: #223874;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#aapply-btn:active {
+    background-color: #1e1e85;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#print-btn {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 85px;
+    background-color: #007bff;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#print-btn:hover {
+    background-color: #0056b3;
+}
+
+#print-btn:active {
+    background-color: #004d99;
+}
+
+@media print{
+    .noPrint{
+        display: none !important;
+    }
+}
